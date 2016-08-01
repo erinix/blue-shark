@@ -6,37 +6,13 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "owner"},
-                "checkboxComponent": {"@": "checkbox"},
-                "labelComponent": {"@": "label"}
-            }
-        },
-        "checkbox": {
-            "prototype": "montage/ui/checkbox.reel",
-            "properties": {
-                "element": {"#": "checkbox"}
-            },
-            "bindings": {
-                "checked": {"<->": "@owner.checked"},
-                "enabled": {"<-": "@owner.enabled"}
-            }
-        },
-        "label": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "label"}
-            },
-            "bindings": {
-                "value": {"<-": "@owner.label"}
+                "element": {"#": "owner"}
             }
         }
     }
     </script>
 </head>
 <body>
-    <div data-montage-id="owner" class="Checkbox">
-        <input type='checkbox' data-montage-id="checkbox" tabindex="0">
-        <label data-montage-id="label" class="Checkbox-label"></label>
-    </div>
+    <input type='checkbox' data-montage-id="owner" tabindex="0" class="Checkbox" />
 </body>
 </html>
